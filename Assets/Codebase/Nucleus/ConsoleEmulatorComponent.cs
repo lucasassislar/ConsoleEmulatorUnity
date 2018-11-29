@@ -13,7 +13,6 @@ namespace ConsoleEmulatorUnity {
 
             t = new Thread(GameThread);
             t.Start();
-            //Console.WriteLine(@"You need to supply a GUIStyle along with your draw call. GUI.Label can take a style as a third parameter.private void OnGUI() { GUIStyle myStyle = new GUIStyle(); myStyle.font = myFont; GUI.Label(new Rect(10, 10, 100, 30), Hello World!, myStyle); } The Font must be created as a game asset and can be assigned to the script via the property inspector.It can contain a material that will specify color.           As for creating the initial Font, it is often best to find a good ttf font that you like, import that, then assign a material with the appropriate color.This site has a bunch of great references on fonts.");
         }
 
         void GameThread() {
@@ -21,7 +20,6 @@ namespace ConsoleEmulatorUnity {
         }
 
         void Update() {
-
             if (Input.GetKey(KeyCode.UpArrow)) {
                 ConsoleU.InputString = ConsoleKey.UpArrow.ToString();
             } else if (Input.GetKey(KeyCode.DownArrow)) {
